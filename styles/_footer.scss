@@ -1,0 +1,27 @@
+#footer {
+    background: $background-color;
+    display: flex;
+    padding: 3rem 5%;
+    color: #fff;
+    flex-wrap: wrap;
+
+    h4 {
+        flex: 3 1 40rem;
+        font-size: calc(1.4rem + 1vw);
+    }
+
+    ul {
+        @include flex(space-between, row);
+        flex: 1 1 40rem;
+    }
+}
+
+@media(max-width: 860px){
+    #footer {
+        text-align: center;
+
+        h4 {
+            padding: 2rem 0 4rem;
+        }
+    }
+}
